@@ -8,17 +8,22 @@ namespace Behavior
 {
 	public class WeightVisitor : IVisitor
 	{
+		int carTotalWeight = 0;
+		int bikeTotalWeitht = 0;
+		public int CarTotalWeight => carTotalWeight;
+		public int BikeTotalWeitht => bikeTotalWeitht;
 		public void Visit(Car car)
 		{
 			switch (car.CarType)
 			{
 				case "Mercedes":
-					Console.WriteLine("Car {0} weight: {1} KG", car.CarName, 1750);
+					Console.WriteLine("Car {0} weight: {1} KG", car.CarName, car.Weight);
 					break;
 				case "Normal":
-					Console.WriteLine("Car {0} weight: {1} KG", car.CarName, 750);
+					Console.WriteLine("Car {0} weight: {1} KG", car.CarName, car.Weight);
 					break;
 			}
+			carTotalWeight += car.Weight;
 		}
 
 		public void Visit(Bike bike)
@@ -26,12 +31,13 @@ namespace Behavior
 			switch (bike.BikeType)
 			{
 				case "Bullet":
-					Console.WriteLine("Bike {0} weight: {1} KG", bike.BikeName, 300);
+					Console.WriteLine("Bike {0} weight: {1} KG", bike.BikeName, bike.Weight);
 					break;
 				case "Normal":
-					Console.WriteLine("Bike {0} weight: {1} KG", bike.BikeName, 100);
+					Console.WriteLine("Bike {0} weight: {1} KG", bike.BikeName, bike.Weight);
 					break;
 			}
+			bikeTotalWeitht += bike.Weight;
 		}
 	}
 }

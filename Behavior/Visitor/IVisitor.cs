@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Behavior
 {
+	/// <summary>
+	/// la hiérarchie des Visiteurs (contenant les traitements sur les données)
+	/// </summary>
 	public interface IVisitor
 	{
 		void Visit(Car car);

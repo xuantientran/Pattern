@@ -11,6 +11,7 @@ namespace Behavior
 		public string CarName { get; set; }
 		public decimal Price { get; set; }
 		public string CarType { get; set; }
+		public int Weight { get; set; }
 
 		public void Accept(IVisitor visitor)
 		{
