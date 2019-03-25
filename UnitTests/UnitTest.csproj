@@ -7,7 +7,4 @@
     <PackageReference Include="NUnit" Version="2.6.4" />
     <PackageReference Include="NUnit.Runners.Net4" Version="2.6.4" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Impl\Impl.csproj" />
-  </ItemGroup>
 </Project>

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <AssemblyName>Behavior</AssemblyName>
+    <RootNamespace>Behavior</RootNamespace>
+  </PropertyGroup>
+
+</Project>
