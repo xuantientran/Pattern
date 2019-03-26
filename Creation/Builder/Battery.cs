@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Creation.AbstractFactory
+namespace Creation.Builder
 {
-	public class TestAbstractFactory
+	public enum Battery
 	{
-		public static void Test()
-		{
-		}
-	}
+		MAH_1000,
+		MAH_1500,
+		MAH_2000
+	};
 }

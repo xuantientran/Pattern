@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Creation.AbstractFactory
+namespace Creation.Builder
 {
-	public class TestAbstractFactory
+	public enum Stylus
 	{
-		public static void Test()
-		{
-		}
-	}
+		YES,
+		NO
+	};
 }

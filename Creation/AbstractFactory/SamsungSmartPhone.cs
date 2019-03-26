@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Creation.AbstractFactory
 {
-	public class TestAbstractFactory
+	class SamsungSmartPhone : ISmartPhone
 	{
-		public static void Test()
-		{
-		}
+		public string Surf() => "SamsungSmartPhone surf";
+		public string Call() => "SamsungSmartPhone call";
 	}
 }
