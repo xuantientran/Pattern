@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Behavior
+namespace Behavior.Visitor
 {
 	/// <summary>
 	/// la hiérarchie des Visiteurs (contenant les traitements sur les données)
