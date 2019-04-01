@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Behavior.Visitor
 {
-	public class Car : IStore
+	public class Car : IVehiculeAcceptor
 	{
 		public string CarName { get; set; }
 		public decimal Price { get; set; }
 		public string CarType { get; set; }
 		public int Weight { get; set; }
 
-		public void Accept(IVisitor visitor)
+		public void Accept(IVehiculeVisitor visitor)
 		{
 			visitor.Visit(this);
 		}

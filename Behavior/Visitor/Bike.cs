@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Behavior.Visitor
 {
-	public class Bike : IStore
+	public class Bike : IVehiculeAcceptor
 	{
 		public string BikeName { get; set; }
 		public decimal Price { get; set; }
@@ -17,7 +17,7 @@ namespace Behavior.Visitor
 		/// En accédant l'élément, le visitor peut traiter ses données selon le type de l'élément
 		/// </summary>
 		/// <param name="visitor"></param>
-		public void Accept(IVisitor visitor)
+		public void Accept(IVehiculeVisitor visitor)
 		{
 			visitor.Visit(this);
 		}

@@ -8,6 +8,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Behavior\Behavior.csproj" />
     <ProjectReference Include="..\Creation\Creation.csproj" />
+    <ProjectReference Include="..\Lib\Lib.csproj" />
+    <ProjectReference Include="..\Structure\Structure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -9,7 +9,7 @@ namespace Behavior.Visitor
 	/// <summary>
 	/// la hiérarchie des Visiteurs (contenant les traitements sur les données)
 	/// </summary>
-	public interface IVisitor
+	public interface IVehiculeVisitor
 	{
 		void Visit(Car car);
 		void Visit(Bike bike);

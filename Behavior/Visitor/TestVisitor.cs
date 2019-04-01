@@ -33,9 +33,9 @@ namespace Behavior.Visitor
 			Console.WriteLine("Car total weight: " + weightVisitor.CarTotalWeight);
 		}
 
-		public static List<IStore> CreateStore()
+		public static List<IVehiculeAcceptor> CreateStore()
 		{
-			List<IStore> store = new List<IStore>();
+			List<IVehiculeAcceptor> store = new List<IVehiculeAcceptor>();
 			store.Add(new Car() { CarName = "A1", Price = 200M, CarType = "Mercedes", Weight = 1750 });
 			store.Add(new Car() { CarName = "A2", Price = 100M, CarType = "Normal", Weight = 1750 });
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Behavior.Visitor
 {
-	public class WeightVisitor : IVisitor
+	public class WeightVisitor : IVehiculeVisitor
 	{
 		int carTotalWeight = 0;
 		int bikeTotalWeitht = 0;

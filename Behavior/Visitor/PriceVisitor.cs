@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Behavior.Visitor
 {
-	public class PriceVisitor : IVisitor
+	public class PriceVisitor : IVehiculeVisitor
 	{
 		decimal carTotal = 0;
 		decimal bikeTotal = 0;

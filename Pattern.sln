@@ -12,6 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{59B4D75D-D2DD-4F23-93B0-663AE697771D}"
 	ProjectSection(SolutionItems) = preProject
 		Data\Draft.txt = Data\Draft.txt
+		Data\P19V01.Tree.txt = Data\P19V01.Tree.txt
+		Data\V01X13.Tree.txt = Data\V01X13.Tree.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structure", "Structure\Structure.csproj", "{49B1F548-8969-43D2-B4F2-AD167BBDC6F4}"
@@ -19,6 +21,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creation", "Creation\Creation.csproj", "{6118BE07-0A15-4DCB-8A81-F8E9C96E2672}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Behavior", "Behavior\Behavior.csproj", "{CDF9F60A-16CD-4E1D-BE21-3BD53B7732FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib", "Lib\Lib.csproj", "{F8910D95-7A8D-40C7-A290-43411C1A9519}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +54,10 @@ Global
 		{CDF9F60A-16CD-4E1D-BE21-3BD53B7732FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDF9F60A-16CD-4E1D-BE21-3BD53B7732FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDF9F60A-16CD-4E1D-BE21-3BD53B7732FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8910D95-7A8D-40C7-A290-43411C1A9519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8910D95-7A8D-40C7-A290-43411C1A9519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8910D95-7A8D-40C7-A290-43411C1A9519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8910D95-7A8D-40C7-A290-43411C1A9519}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
