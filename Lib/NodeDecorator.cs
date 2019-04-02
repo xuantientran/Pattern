@@ -16,7 +16,13 @@ namespace Lib
 		}
 
 		public override List<Node> Children => _node.Children;
-		public override Node Parent => _node.Parent;
+
+		public override Node Parent
+		{
+			get => _node.Parent;
+			set => _node.Parent = value;
+		}
+
 		public override string Id => _node.Id;
 		public override string Label => _node.Label;
 	}
