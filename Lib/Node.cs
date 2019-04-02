@@ -35,7 +35,7 @@ namespace Lib
 
 		public override string Label => _label;
 
-		public override Node Parent => _parent;
+		public override Node Parent { get => _parent; set => _parent = value; }
 
 		public override List<Node> Children { get => _children; }
 

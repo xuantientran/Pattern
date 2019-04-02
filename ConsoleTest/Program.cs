@@ -1,4 +1,6 @@
-﻿using Behavior.Visitor;
+﻿using Behavior.ChainResponsibility;
+using Behavior.Command;
+using Behavior.Visitor;
 using Creation.AbstractFactory;
 using Creation.Builder;
 using Creation.Factory;
@@ -21,11 +23,11 @@ namespace ConsoleTest
 			//TestBuilder.Test();
 			//new Client().Test();
 			//TestDecorator.Test();
-			string path = Path.Combine(Utility.GetDataDirectory(), "V01X13.Tree.txt");
-			Tree tree = new Tree(path);
-			tree.Load();
-			ColorfulNode colorful = new ColorfulNode(tree.Root);
-			Console.WriteLine(colorful.Id + " " + colorful.Label);
+			//string path = Path.Combine(Utility.GetDataDirectory(), "V01X13.Tree.txt");
+			//Tree tree = new Tree(path);
+			//tree.Load();
+			//TestChainResponsibility.Test();
+			TestCommand.Test();
 			Console.ReadKey();
 		}
 	}
