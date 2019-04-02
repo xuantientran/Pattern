@@ -27,7 +27,8 @@ namespace ConsoleTest
 			//Tree tree = new Tree(path);
 			//tree.Load();
 			//TestChainResponsibility.Test();
-			TestCommand.Test();
+			//TestCommand.Test();
+			TestCommand.TestMedia();
 			Console.ReadKey();
 		}
 	}
