@@ -4,19 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Behavior.Command
+namespace Behavior.CommandSimple
 {
 	/// <summary>
 	/// These objects would act as Receivers and execute requested functionality through Execute method
 	/// </summary>
-	public class VCRPlayCommand : ICommand
+	public class DVDPlayCommand : ICommand
 	{
-		public VCRPlayCommand()
-		{
-		}
 		public void Execute()
 		{
-			Console.WriteLine("VCR Started.");
+			Console.WriteLine("DVD Started.");
 		}
 	}
 }

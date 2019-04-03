@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace Behavior.Command
 {
 	/// <summary>
-	/// The 'Command' abstract class
+	/// La classe abstracte 'Command'
+	/// Pour s'adapter aux plusieurs classe concrète, il ne faut pas spéciser les paramètres dans les deux méthodes en dessous
+	/// Les paramètres seront passés par le constructeur.
 	/// </summary>
 	abstract class Command
 	{

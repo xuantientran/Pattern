@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Behavior.Command
 {
@@ -11,8 +7,9 @@ namespace Behavior.Command
 	/// </summary>
 	class Calculator
 	{
+		//l'état est toujours maintenu par propriété _curr
 		private int _curr = 0;
-		public void Operation(char @operator, int operand)
+		public void Calculate(char @operator, int operand)
 		{
 			switch (@operator)
 			{

@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Behavior.Command
 {
 	/// <summary>
-	/// The 'ConcreteCommand' class
+	/// La classe concrète de l'interface Command
+	/// On garde tous les paramètres y compris la calculatrice
+	/// Pour qu'on puisse annuler le calcul
 	/// </summary>
 	class CalculatorCommand : Command
 	{
@@ -15,7 +13,13 @@ namespace Behavior.Command
 		private int _operand;
 		private Calculator _calculator;
 
-		// Constructor
+		/// <summary>
+		/// Tous les paramètres sont mis en place prêts à éxecuter
+		/// soit un caclul, un recalcul ou un annulation
+		/// </summary>
+		/// <param name="calculator"></param>
+		/// <param name="operator"></param>
+		/// <param name="operand"></param>
 		public CalculatorCommand(Calculator calculator,
 			char @operator, int operand)
 		{
@@ -24,34 +28,24 @@ namespace Behavior.Command
 			_operand = operand;
 		}
 
-		// Gets operator
-		public char Operator
-		{
-			set { _operator = value; }
-		}
+		/// <summary>
+		/// Execute new command
+		/// </summary>
+		public override void Execute() =>
+			_calculator.Calculate(_operator, _operand);
 
-		// Get operand
+		/// <summary>
+		/// Unexecute last command
+		/// </summary>
+		public override void UnExecute() =>
+			_calculator.Calculate(ReverseOperator(_operator), _operand);
 
-		public int Operand
-		{
-			set { _operand = value; }
-		}
-
-		// Execute new command
-		public override void Execute()
-		{
-			_calculator.Operation(_operator, _operand);
-		}
-
-		// Unexecute last command
-		public override void UnExecute()
-		{
-			_calculator.Operation(Undo(_operator), _operand);
-		}
-
-		// Returns opposite operator for given operator
-
-		private char Undo(char @operator)
+		/// <summary>
+		/// Returns opposite operator for given operator
+		/// </summary>
+		/// <param name="operator"></param>
+		/// <returns></returns>
+		private char ReverseOperator(char @operator)
 		{
 			switch (@operator)
 			{

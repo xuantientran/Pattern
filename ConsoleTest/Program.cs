@@ -1,5 +1,6 @@
 ﻿using Behavior.ChainResponsibility;
 using Behavior.Command;
+using Behavior.CommandSimple;
 using Behavior.Visitor;
 using Creation.AbstractFactory;
 using Creation.Builder;
@@ -27,8 +28,8 @@ namespace ConsoleTest
 			//Tree tree = new Tree(path);
 			//tree.Load();
 			//TestChainResponsibility.Test();
-			//TestCommand.Test();
-			TestCommand.TestMedia();
+			TestCommand.Test();
+			//TestCommandSimple.TestMedia();
 			Console.ReadKey();
 		}
 	}
